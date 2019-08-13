@@ -52,6 +52,6 @@ with open(py_bank_output, "w") as file:
         f"Greatest Increase in Profits: {total_months[max_increase_month]} {max_increase_change:.2f}\n"
         f"Greatest Profit Loss: {total_months[max_decrease_month]} ${max_decrease_change:.2f}\n")
     
-## Prints results to the terminal
+# Prints the resulting text file to the terminal
 with open(py_bank_output, 'r') as reader:
     print(reader.read())
