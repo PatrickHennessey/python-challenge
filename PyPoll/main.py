@@ -69,6 +69,6 @@ with open(py_poll_output, "w") as file:
                     f"Winner: {str(who_is_winner[0])}\n"
                     f"-------------------------")
         
-## Prints results to the terminal 
+# Print the resulting txt file to the terminal 
 with open(py_poll_output, 'r') as reader:
     print(reader.read())
