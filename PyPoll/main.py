@@ -53,11 +53,9 @@ for candidate in voting_results:
     if max(votes) == candidate[1]:
         who_is_winner.append(candidate[0])
 
-# winner = who_is_winner
-
 # Print results to a file named "PyPol_Results.txt"
 with open(py_poll_output, "w") as file:
-    # ".writelines" allows you to print to multiple lines without haveing to do multiple file.writes statements.
+    # ".writelines" allows you to print to multiple lines without having to do multiple file.write statements.
     # The "\n" is like a carriage return. You could shorten everything by getting rid of the multple f"" lines, 
     # but then you have one long line that is diffficult to read without scrolling
     file.writelines(f"---------------------------\n"
